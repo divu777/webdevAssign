@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link href="styles.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="maintxt">
+      <h1>Welcome to the chocolate factory</h1>
+    </div>
+    <section class="slider_container">
+      <div class="con"><h1>Task 1</h1></div>
+      <div class="container">
+        <div class="swiper card_slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="img_box">
+                <img
+                  src="top-view-person-holding-small-delicious-vegan-chocolate-bars-with-berries.jpg"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_box">
+                <img src="high-view-delicious-chocolate-plate.jpg" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_box">
+                <img
+                  src="dark-chocolate-truffles-gourmet-collection-generated-by-ai.jpg"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_box">
+                <img src="dark-chocolate-truffles-close-up.jpg" />
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="con">
+        <h1>Task 2</h1>
+      </div>
+      <div>
+        <h1 class="con2">Custom chocolate pack</h1>
+      </div>
+      <div class="product_catalogue">
+        <div class="chocalate-container">
+          <div class="div1 child">
+            <h2>chocolate 1</h2>
+            <img src="kitkat.jpg" alt="" class="imgg" />
+            <h4>price : $100</h4>
+            <button class="btn" data-price="100">Add to Pack</button>
+          </div>
+          <div class="div2 child">
+            <h2>chocolate 2</h2>
+            <img src="kitkat.jpg" alt="" class="imgg" />
+            <h4>price : $200</h4>
+            <button class="btn" data-price="200">Add to Pack</button>
+          </div>
+          <div class="div3 child">
+            <h2>chocolate 3</h2>
+            <img src="kitkat.jpg" alt="" class="imgg" />
+            <h4>price : $300</h4>
+            <button class="btn" data-price="300">Add to Pack</button>
+          </div>
+          <div class="div4 child">
+            <h2>chocolate 4</h2>
+            <img src="kitkat.jpg" alt="" class="imgg" />
+            <h4>price : $400</h4>
+            <button class="btn" data-price="400">Add to Pack</button>
+          </div>
+          <div class="div5 child">
+            <h2>chocolate 5</h2>
+            <img src="kitkat.jpg" alt="" class="imgg" />
+            <h4>price : $500</h4>
+            <button class="btn" data-price="500">Add to Pack</button>
+          </div>
+          <div class="div6 child">
+            <h2>chocolate 6</h2>
+            <img src="kitkat.jpg" alt="" class="imgg" />
+            <h4>price : $600</h4>
+            <button class="btn" data-price="600">Add to Pack</button>
+          </div>
+        </div>
+        <div class="selected-items">
+          <div class="mainpayment">
+            <div class="payment">Total Sum of the chocolate</div>
+            <h2>Selected Items:</h2>
+            <ul class="selected-list"></ul>
+            <h3>Total Price: $<span id="total-price">0</span></h3>
+            <button id="reset-btn">Reset Selection</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
